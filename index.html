@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.gstatic.com/css2?famuly=Montserrat:wght@400;700&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link rel="stylesheet" href=".css/index.css" />
+
+		<script src=".js/wow.min.js"></script>
+		<script>
+			new WOW().init()
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container__custom">
+				<a class="header__logo" href="#">konstantin.konyushkin</a>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="hero">
+			<div class="container hero__container">
+				<div class="hero__about">
+					<h1 class="hero__about">I'm Web Developer</h1>
+
+					<div class="text-typing">
+						<div id="typed"></div>
+					</div>
+
+					<div id="type-string">
+						<span>FrontEnd Developer</span>
+						<span>BackEnd Developer</span>
+						<span>FullStack Developer</span>
+					</div>
+
+					<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+					<script>
+						let typed = new Typed('#typed', {
+							typeSpeed: 100,
+							backSpeed: 50,
+							startDelay: 500,
+							loop: true,
+							stringsElement: '#type-string',
+						})
+					</script>
+
+					<h2 class="hero__subtitle">Konstantin Konyushkin</h2>
+					<p class="hero__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<div class="hero__links">
+						<a class="hero__link" href="https://github.com/LeopoldDePalma">
+							<i class="bx bxl-github"></i>
+						</a>
+						<a class="hero__link" href="https://vk.com/konstatin.konyushkin">
+							<i class="bx bxl-vk"></i>
+						</a>
+						<a class="hero__link" href="https://t.me/LeopoldDePalma">
+							<i class="bx bxl-telegram"></i>
+						</a>
+						<a
+							class="hero__link"
+							href="https://www.instagram.com/leopold.de.palma/"
+						>
+							<i class="bx bxl-instagram"></i>
+						</a>
+						<a class="hero__link" href="https://dinosaurgame.app/">
+							<i class="bx bxs-castle"></i>
+						</a>
+					</div>
+				</div>
+				<div class="hero__box">
+					<img class="hero__box__img" src=".img/hero.png" alt="hero" />
+				</div>
+			</div>
+		</div>
+
+		<div class="video-bg">
+			<video src="/.img/video-bg.mp4" autoplay muted loop></video>
+			<div class="effect"></div>
+			<div class="video-bg__content">
+				<h1>Portfolio</h1>
+			</div>
+		</div>
+
+		<section>
+			<div class="main">
+				<div
+					data-wow-duration="2s"
+					class="technologies__container wow animate__animated animate__fadeInLeft"
+				>
+					<h2 class="technologies__title">Technologies</h2>
+					<div class="technologies__links">
+						<a class="technologies" href="#"><i class="bx bxl-html5"></i></a>
+						<a class="technologies" href="#"><i class="bx bxl-css3"></i></a>
+						<a class="technologies" href="#"
+							><i class="bx bxl-javascript"></i
+						></a>
+						<a class="technologies" href="#"
+							><i class="bx bxl-typescript"></i
+						></a>
+						<a class="technologies" href="#"><i class="bx bxl-nodejs"></i></a>
+						<a class="technologies" href="#"><i class="bx bxl-go-lang"></i></a>
+					</div>
+				</div>
+				<div
+					data-wow-duration="2s"
+					class="libraries__container wow animate__animated animate__fadeInLeft"
+				>
+					<h2 class="libraries__title">Libraries & FrameWorks</h2>
+					<div class="libraries__links">
+						<a class="libraries" href="#"><i class="bx bxl-react"></i></a>
+						<a class="libraries" href="#"><i class="bx bxl-redux"></i></a>
+						<a class="libraries" href="#"><i class="bx bxl-angular"></i></a>
+					</div>
+				</div>
+				<div
+					data-wow-duration="2s"
+					class="databases__container wow animate__animated animate__fadeInLeft"
+				>
+					<h2 class="databases__title">Databases</h2>
+					<div class="databases__links">
+						<a class="databases" href="#"><i class="bx bxl-postgresql"></i></a>
+						<a class="databases" href="#"><i class="bx bxl-mongodb"></i></a>
+					</div>
+				</div>
+				<div
+					data-wow-duration="2s"
+					class="resources__container wow animate__animated animate__fadeInLeft"
+				>
+					<h2 class="resources__title">Resources</h2>
+					<div class="resources__links">
+						<a class="resources" href="#"><i class="bx bxl-git"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer">
+				<div class="row">
+					<a href="https://t.me/LeopoldDePalma"
+						><i class="bx bxl-telegram"></i
+					></a>
+					<a href="https://www.instagram.com/leopold.de.palma/"
+						><i class="bx bxl-instagram"></i
+					></a>
+					<a href="#"><i class="bx bxl-youtube"></i></a>
+					<a href="#"><i class="bx bx-envelope"></i></a>
+				</div>
+
+				<div class="row">
+					<ul>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Career</a></li>
+					</ul>
+				</div>
+
+				<div class="row">
+					Copyright © 2024 - All rights reserved || Designed By: LeopoldDePalma
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
